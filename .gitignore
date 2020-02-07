@@ -6,3 +6,7 @@ utils/
 .DS_Store
 
 your_submission.csv
+
+data_bu.7z
+
+.ipynb_checkpoints/
