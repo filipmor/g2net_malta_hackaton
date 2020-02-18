@@ -32,6 +32,11 @@ def plot_confustion_matrix(y_test, y_predicted, df, prob=False):
     plt.yticks(classes_values, classes_labels)
     plt.xlabel("Real data")
     plt.ylabel("Predicted data")
+    b, t = plt.ylim() # discover the values for bottom and top
+    print(b,t)
+    b += 0.5 # Add 0.5 to the bottom
+    t -= 0.5 # Subtract 0.5 from the top
+    plt.ylim(b, t) # update the ylim(bottom, top) values
     plt.show()
     
 
